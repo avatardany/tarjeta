@@ -7,7 +7,7 @@
 <meta name="description" content="José Daniel Caballero Riverón: apps, páginas web, sistemas para negocios, invitaciones digitales y traducción con IA.">
 <meta property="og:title" content="Jay Caballero · Soluciones con IA">
 <meta property="og:description" content="Apps, páginas web, inventarios, checadores, cotizadores e invitaciones digitales.">
-<meta property="og:image" content="chaleco-hd.jpg">
+<meta property="og:image" content="https://avatardany.github.io/tarjeta/retrato-top.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Pinyon+Script&display=swap">
@@ -71,7 +71,7 @@ a{color:var(--accent)}
 
 .portrait{position:relative;max-width:440px;width:100%;justify-self:end}
 .portrait .frame{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;background:var(--surface);box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
-.portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 0%;display:block}
+.portrait .frame .half{position:absolute;left:0;width:100%;height:50%;overflow:hidden}.portrait .frame .h1{top:0}.portrait .frame .h2{top:50%}.portrait .frame .half img{display:block;width:100%;height:auto}.portrait .frame .h1 img{margin-top:-4%}.portrait .frame .h2 img{margin-top:-8.3%}
 .portrait .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,14,26,.75))}
 .portrait .cap{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;color:#fff}
 .portrait .cap b{font-family:var(--display);font-size:22px;display:block}
@@ -262,7 +262,7 @@ footer{padding-block:36px 96px;color:var(--muted);font-size:13px;display:flex;ju
     <div class="trust"><span>App publicada en Google Play</span><span>Bilingüe inglés ⇄ español</span><span>Respuesta el mismo día</span></div>
   </div>
   <div class="portrait">
-    <div class="frame"><img src="chaleco-hd.jpg" alt="José Daniel Caballero Riverón con camisa, chaleco y corbata azul" width="1080" height="1350"></div>
+    <div class="frame"><div class="half h1"><img src="retrato-top.jpg" alt="José Daniel Caballero Riverón con camisa, chaleco y corbata azul" width="1000" height="708"></div><div class="half h2"><img src="retrato-bottom.jpg" alt="" width="1000" height="708"></div></div>
     <div class="cap"><b>José Daniel Caballero</b><span>Desarrollador de soluciones con IA</span></div>
     <div class="badge b1"><i>▶</i><div>App en Play Store<small>Publicada y activa</small></div></div>
     <div class="badge b2"><i>EN</i><div>Bilingüe<small>3 años como traductor</small></div></div>
