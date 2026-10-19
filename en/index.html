@@ -178,6 +178,11 @@ section{margin-bottom:104px;scroll-margin-top:84px}
 .case .st{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ok)}
 .case .st::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 22%,transparent)}
 .case h3{font-size:23px}
+.case .shot{display:block;margin:-26px -26px 6px;border-radius:20px 20px 0 0;overflow:hidden;aspect-ratio:16/9;background:var(--bg2);border-bottom:1px solid var(--line)}
+.case .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+a.shot:hover img{transform:scale(1.03)}
+.case .go{font-weight:600;font-size:14px;color:var(--ink)}
+.proof .case:last-child:nth-child(odd){grid-column:1/-1}
 .case p{color:var(--muted)}
 .case .meta{font-size:13px;color:var(--muted);margin-top:auto;padding-top:8px;border-top:1px dashed var(--line)}
 
@@ -460,9 +465,10 @@ svc:[
 {c:'contenido',i:'play',t:'Video y redes con IA',d:'Guiones, narración y edición de videos para YouTube, Reels y TikTok.',x:['YouTube','Shorts','Anuncios']},
 {c:'contenido',i:'lang',t:'Traducción inglés ⇄ español',d:'Documentos, sitios y apps en dos idiomas; interpretación en conferencias y eventos.',x:['Documentos','Eventos','Subtítulos']}],
 proof:[
-{s:'Disponible en Google Play',t:'Aplicación bíblica con página web',d:'App Android para leer y estudiar la Biblia, con su propia página web. Diseñada, desarrollada y publicada con nuestra cuenta de desarrollador.',m:'App Android · Sitio web · Publicación en tienda'},
-{s:'En línea',t:'Cotizador web de ventanas PVC',d:'El cliente arma su ventana, ve el precio al momento y recibe una cotización con la marca de la empresa. <a href="https://pvc.luft.mx/" target="_blank" rel="noopener">pvc.luft.mx</a>',m:'Empresa de cancelería · Ventas'},
-{s:'En uso diario',t:'Checadores de asistencia',d:'El personal registra entrada, salida y comida desde su celular, con un link o una app. El dueño ve quién llegó y a qué hora.',m:'Recursos humanos · Web y Android'},
+{s:'En línea',img:'invitacion.jpg',url:'https://avatardany.github.io/boda-omar-itzel/',t:'Invitaciones digitales interactivas',d:'Invitación de boda que se abre como un sobre con sello, con música, cuenta regresiva, mapa, agenda y confirmación de asistencia. Se comparte por WhatsApp.',m:'Bodas · XV años · Eventos'},
+{s:'En línea',img:'cotizador.jpg',url:'https://pvc.luft.mx/',t:'Cotizador web de ventanas PVC',d:'El cliente arma su ventana, ve el precio al momento y recibe una cotización con la marca de la empresa.',m:'Empresa de cancelería · Ventas · pvc.luft.mx'},
+{s:'Disponible en Google Play',img:'biblia.jpg',t:'Aplicación bíblica con página web',d:'App Android para leer y estudiar la Biblia en hebreo y griego, con texto interlineal. Diseñada, desarrollada y publicada con nuestra cuenta de desarrollador.',m:'App Android · Sitio web · Publicación en tienda'},
+{s:'En uso diario',img:'checador.jpg',t:'Checadores de asistencia',d:'El personal registra entrada, salida y comida desde su celular, con un link o una app. El dueño ve quién llegó y a qué hora.',m:'Recursos humanos · Web y Android'},
 {s:'En uso diario',t:'Tablero de control con asistente de IA',d:'Control de material, pedidos, obras y pendientes. Un asistente organiza el día y manda un resumen cada mañana a las 8:00.',m:'Administración · Compras'}],
 steps:[{t:'Nos cuenta qué necesita',d:'Por WhatsApp o correo: qué le quita tiempo, qué quiere vender o qué evento tiene.'},{t:'Ve una primera versión',d:'En pocos días tiene la herramienta funcionando para probarla y pedir cambios.'},{t:'Se la entregamos lista',d:'Publicada, con su marca, y con una explicación sencilla para usted y su equipo.'}],
 packs:[
@@ -508,9 +514,10 @@ svc:[
 {c:'contenido',i:'play',t:'AI video and social',d:'Scripts, narration and editing for YouTube, Reels and TikTok.',x:['YouTube','Shorts','Ads']},
 {c:'contenido',i:'lang',t:'English ⇄ Spanish translation',d:'Documents, sites and apps in two languages; conference and event interpreting.',x:['Documents','Events','Subtitles']}],
 proof:[
-{s:'Available on Google Play',t:'Bible app with website',d:'Android app to read and study the Bible, with its own website. Designed, built and published under our developer account.',m:'Android app · Website · Store release'},
-{s:'Live',t:'PVC window web quoting tool',d:'The customer configures a window, sees the price instantly and receives a branded quote. <a href="https://pvc.luft.mx/" target="_blank" rel="noopener">pvc.luft.mx</a>',m:'Window manufacturer · Sales'},
-{s:'In daily use',t:'Attendance trackers',d:'Staff clock in, out and lunch from their phone via link or app. The owner sees who arrived and when.',m:'HR · Web and Android'},
+{s:'Live',img:'invitacion.jpg',url:'https://avatardany.github.io/boda-omar-itzel/',t:'Interactive digital invitations',d:'A wedding invitation that opens like a sealed envelope, with music, countdown, map, schedule and RSVP. Shared on WhatsApp.',m:'Weddings · Quinceañeras · Events'},
+{s:'Live',img:'cotizador.jpg',url:'https://pvc.luft.mx/',t:'PVC window web quoting tool',d:'The customer configures a window, sees the price instantly and receives a branded quote.',m:'Window manufacturer · Sales · pvc.luft.mx'},
+{s:'Available on Google Play',img:'biblia.jpg',t:'Bible app with website',d:'Android app to read and study the Bible in Hebrew and Greek, with interlinear text. Designed, built and published under our developer account.',m:'Android app · Website · Store release'},
+{s:'In daily use',img:'checador.jpg',t:'Attendance trackers',d:'Staff clock in, out and lunch from their phone via link or app. The owner sees who arrived and when.',m:'HR · Web and Android'},
 {s:'In daily use',t:'Control dashboard with AI assistant',d:'Materials, orders, jobs and to-dos in one place. An assistant organizes the day and sends a summary every morning at 8:00.',m:'Operations · Purchasing'}],
 steps:[{t:'Tell us what you need',d:'By WhatsApp or email: what eats your time, what you want to sell, or what event you have.'},{t:'See a first version',d:'Within days you have the tool running to try it and request changes.'},{t:'We deliver it ready',d:'Published, branded, with a plain-language walkthrough for you and your team.'}],
 packs:[
@@ -542,7 +549,7 @@ const t=T[L];
 document.documentElement.lang=L;
 document.querySelectorAll('[data-i]').forEach(e=>{const v=t[e.dataset.i];if(v!==undefined)e.innerHTML=v});
 $('svc-grid').innerHTML=t.svc.filter(s=>F==='todo'||s.c===F).map(s=>`<article class="svc"><div class="ico">${I[s.i]}</div><h3>${s.t}</h3><p>${s.d}</p><ul>${s.x.map(x=>`<li>${x}</li>`).join('')}</ul></article>`).join('');
-$('proof').innerHTML=t.proof.map(p=>`<article class="case"><span class="st">${p.s}</span><h3>${p.t}</h3><p>${p.d}</p><div class="meta">${p.m}</div></article>`).join('');
+$('proof').innerHTML=t.proof.map(p=>{const im=p.img?`<img src="../p/${p.img}" alt="${p.t}" width="1200" height="675" loading="lazy">`:'';const sh=p.img?(p.url?`<a class="shot" href="${p.url}" target="_blank" rel="noopener">${im}</a>`:`<div class="shot">${im}</div>`):'';return `<article class="case">${sh}<span class="st">${p.s}</span><h3>${p.t}</h3><p>${p.d}</p>${p.url?`<a class="go" href="${p.url}" target="_blank" rel="noopener">${L==='en'?'See it live':'Verlo en línea'} →</a>`:''}<div class="meta">${p.m}</div></article>`}).join('');
 $('steps').innerHTML=t.steps.map(s=>`<div class="step"><h3>${s.t}</h3><p>${s.d}</p></div>`).join('');
 $('packs').innerHTML=t.packs.map(p=>`<div class="pack${p.star?' star':''}" ${p.star?`data-flag="${p.star}"`:''}><h3>${p.n}</h3><p class="for">${p.f}</p><div class="price">${p.p}<small>${p.u}</small></div><ul>${p.l.map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn${p.star?' gold':''}" href="https://wa.me/529932211158?text=Hola%20Jay%2C%20me%20interesa%20${p.q}" target="_blank" rel="noopener">${p.b}</a></div>`).join('');
 $('facts').innerHTML=t.facts.map(f=>`<div class="fact"><dt>${f[0]}</dt><dd>${f[1]}</dd></div>`).join('');
